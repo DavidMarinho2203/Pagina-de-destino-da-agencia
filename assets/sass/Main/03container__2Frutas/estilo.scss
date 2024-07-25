@@ -1,0 +1,60 @@
+// Estilizando o Container__2Frutas
+#container__2Frutas {
+    display: grid;
+    grid-template-areas: "area1" "area2";
+
+    .container__2Frutas__descricao {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 20px 40px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: $weight-900;
+            font-family: $font-family-2;
+            color: $primaria-azul-escuro-cor;
+        }
+
+        p {
+            font-family: $font-family-1;
+            font-weight: $weight-700;
+            color: $primaria-azul-escuro-cor;
+        }
+    }
+
+    .container__2Frutas__descricao:nth-child(1) {
+        background-image: url(../img/mobile/image-graphic-design.jpg);
+        ;
+        grid-area: area1;
+
+        h3 {
+            color: $primaria-ciano-escuro-dessaturado-cor;
+        }
+
+        p {
+            color: $primaria-ciano-escuro-dessaturado-cor;
+        }
+    }
+
+    .container__2Frutas__descricao:nth-child(2) {
+        background-image: url(../img/mobile/image-photography.jpg);
+        color: $primaria-ciano-escuro-dessaturado-cor;
+        grid-area: area2;
+
+        h3 {
+            color: $primaria-azul-escuro-cor;
+        }
+
+        p {
+            color: $primaria-azul-escuro-cor;
+        }
+    }
+}

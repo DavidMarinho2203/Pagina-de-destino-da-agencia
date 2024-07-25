@@ -1,0 +1,25 @@
+#container__galeria02 {
+    display: grid;
+    grid-template-areas: "area1 area2" "area3 area4";
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+
+    img:nth-child(1) {
+        grid-area: area1;
+    }
+
+    img:nth-child(2) {
+        grid-area: area2;
+    }
+
+    img:nth-child(3) {
+        grid-area: area3;
+    }
+
+    img:nth-child(4) {
+        grid-area: area4;
+    }
+}

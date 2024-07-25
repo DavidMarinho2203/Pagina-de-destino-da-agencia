@@ -1,0 +1,23 @@
+// Estilizando o Container__Capa
+#container__capa {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url(../img/mobile/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    h1 {
+        color: $neutra-branco-cor;
+        font-family: $font-family-2;
+        font-size: 2.5rem;
+        font-weight: $weight-900;
+        text-transform: uppercase;
+    }
+}
