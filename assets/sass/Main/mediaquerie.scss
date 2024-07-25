@@ -1,0 +1,91 @@
+@media (width > 570px) {
+    main {
+        #container__capa {
+            background-image: url(../img/desktop/image-header.jpg);
+        }
+
+        #container__galeria01 {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "area1"
+                "area2"
+                "area3"
+                "area4";
+
+            img:nth-child(1) {
+                background-image: url(../img/desktop/image-transform.jpg);
+            }
+
+            img:nth-child(2) {
+                background-image: url(../img/desktop/image-stand-out.jpg);
+            }
+        }
+
+        #container__2Frutas {
+            grid-template-columns: 1fr;
+            grid-template-areas: "area1" "area2";
+
+            .container__2Frutas__descricao:nth-child(1) {
+                background-image: url(../img/desktop/image-graphic-design.jpg);
+            }
+
+            .container__2Frutas__descricao:nth-child(2) {
+                background-image: url(../img/desktop/image-photography.jpg);
+            }
+        }
+    }
+}
+
+@media (width >= 768px) {
+    main {
+        #container__galeria01 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "area2 area1"
+                "area3 area4";
+
+            img:nth-child(1) {
+                background-image: url(../img/desktop/image-transform.jpg);
+            }
+
+            img:nth-child(2) {
+                background-image: url(../img/desktop/image-stand-out.jpg);
+            }
+        }
+
+        #container__2Frutas {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "area1 area2";
+
+            .container__2Frutas__descricao:nth-child(1) {
+                background-image: url(../img/desktop/image-graphic-design.jpg);
+            }
+
+            .container__2Frutas__descricao:nth-child(2) {
+                background-image: url(../img/desktop/image-photography.jpg);
+            }
+        }
+
+        #container__avaliacao {
+            #container__clientes {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: "area1 area2 area3";
+
+                .container__clientes__pessoa {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+            }
+        }
+
+        #container__galeria02 {
+            display: grid;
+            grid-template-areas: "area1 area2 area3 area4";
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+//  Importando as variáveis cores e fontes.
+@import './cores/cores.scss';
+@import './fonts/fonts.scss';
+
+// Resetando o CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Estilizando o Body
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $neutra-branco-cor;
+    position: relative;
+}
+
+// Importando o Header e o Media querie
+@import './Header/header.scss';
+@import './Header/mediaquerie.scss';
+// Importando o Main e o Media querie
+@import './Main/main.scss';
+@import './Main/mediaquerie.scss';
+// Importando o Footer e o Media querie
+@import './Footer/footer.scss';
+@import './Footer/mediaquerie.scss';

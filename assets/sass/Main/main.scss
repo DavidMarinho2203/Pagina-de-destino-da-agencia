@@ -1,0 +1,21 @@
+// Estilizando o Main
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Importando container capa
+    @import './01container__capa/estilo.scss';
+    // Importando container galeria01
+    @import './02container__galeria01/estilo.scss';
+
+    // Importando container 2Frutas
+    @import './03container__2Frutas/estilo.scss';
+
+    // Importando container avaliacao
+    @import './04container__avaliacao/estilo.scss';
+
+    // Estilizando o Container__galeria02
+    @import './05container__galeria02/estilo.scss';
+
+}

@@ -1,0 +1,67 @@
+// Estilizando o Header
+header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: transparent;
+
+
+    #logo {
+        width: 100px;
+    }
+
+    #hambuguer {
+        width: 20px;
+    }
+
+    // Estilizando o Menu
+    #menu {
+        transition: display 0.5s;
+        margin: 0 auto;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        left: 0;
+        width: 90%;
+        background-color: $neutra-branco-cor ;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 0;
+
+        i::before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            right: 0;
+            border-left: 50px solid transparent;
+            border-right: 0px solid transparent;
+            border-bottom: 40px solid $neutra-branco-cor;
+            
+        }
+
+        a {
+            width: 50%;
+            padding: 0.5em;
+            text-align: center;
+            text-decoration: none;
+            color: $neutra-azul-acinzentado-cor;
+            font-family: $font-family-1;
+            font-size: 1.5rem;
+            font-weight: $weight-700;
+            border-radius: 50px;
+        }
+
+        #linkDestacado {
+            border-radius: 50px;
+            background-color: $primaria-amarelo-cor;
+            color: #000;
+        }
+    }
+    
+}
